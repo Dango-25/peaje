@@ -1,0 +1,9 @@
+  <?xml version="1.0"?>
+    <vehiculo>
+        <Automovil>
+            <Placa>$Placa</Placa>
+            <Marca>$Marca</Marca>
+            <Valorpeaje>$Valorpeaje</Valorpeaje>
+        </Automovil>
+    </vehiculo>
+String Placa, String Marca, Int Valorpeaje

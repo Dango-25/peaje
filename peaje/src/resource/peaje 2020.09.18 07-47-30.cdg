@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="peaje">
+  <ClassDiagramComponents>
+    <Class name="Principal" package="udem.edu.co.peaje" visibility="public" xPosition="46.0" yPosition="36.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Vehiculo" package="udem.edu.co.peaje.vehiculos.abstrac" visibility="public" xPosition="485.0" yPosition="20.0">
+      <Fields>
+        <Field name="Placa" type="String" visibility="private"/>
+        <Field name="Marca" type="String" visibility="private"/>
+        <Field name="Valorpeaje" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="Placa"/>
+          <Argument type="String" name="Marca"/>
+          <Argument type="int" name="Valorpeaje"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPlaca" returnType="String" visibility="public"/>
+        <Method name="getMarca" returnType="String" visibility="public"/>
+        <Method name="getValorpeaje" returnType="int" visibility="public"/>
+        <Method name="setPlaca" returnType="void" visibility="public">
+          <Argument type="String" name="Placa"/>
+        </Method>
+        <Method name="setMarca" returnType="void" visibility="public">
+          <Argument type="String" name="Marca"/>
+        </Method>
+        <Method name="setValorpeaje" returnType="void" visibility="public">
+          <Argument type="int" name="Valorpeaje"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Automovil" package="udem.edu.co.peaje.vehiculos" visibility="public" xPosition="100.0" yPosition="293.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="Placa"/>
+          <Argument type="String" name="Marca"/>
+          <Argument type="int" name="Valorpeaje"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Camion" package="udem.edu.co.peaje.vehiculos" visibility="public" xPosition="450.0" yPosition="426.0">
+      <Fields>
+        <Field name="Numejes" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="Placa"/>
+          <Argument type="String" name="Marca"/>
+          <Argument type="int" name="Valorpeaje"/>
+          <Argument type="int" name="Numejes"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNumejes" returnType="int" visibility="public"/>
+        <Method name="setNumejes" returnType="void" visibility="public">
+          <Argument type="int" name="Numejes"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Moto" package="udem.edu.co.peaje.vehiculos" visibility="public" xPosition="867.0" yPosition="293.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="Placa"/>
+          <Argument type="String" name="Marca"/>
+          <Argument type="int" name="Valorpeaje"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="udem.edu.co.peaje.vehiculos.Automovil" target="udem.edu.co.peaje.vehiculos.abstrac.Vehiculo"/>
+    <IsRelation name="is" source="udem.edu.co.peaje.vehiculos.Camion" target="udem.edu.co.peaje.vehiculos.abstrac.Vehiculo"/>
+    <IsRelation name="is" source="udem.edu.co.peaje.vehiculos.Moto" target="udem.edu.co.peaje.vehiculos.abstrac.Vehiculo"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

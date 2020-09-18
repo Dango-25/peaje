@@ -1,0 +1,9 @@
+{
+    "vehiculos":[{
+            "Automovil":[{
+            "Placa":"XYZ789",
+            "Marca":"BMW",
+            "valorPeaje":"10000"
+        }]
+    }]
+}
